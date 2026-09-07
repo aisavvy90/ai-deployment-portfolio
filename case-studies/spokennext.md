@@ -1,4 +1,4 @@
-# SpokenNext
+# SpokenNext — Voice-to-Action AI
 
 > Speak naturally. Review the intent. Move the right actions forward.
 
@@ -56,4 +56,3 @@ The source repository has not yet been published. This case study documents the 
 ## My contribution
 
 I shaped the use case, interaction model, ambiguity rules, privacy behaviour, AI-assisted build, testing and cloud deployment.
-
