@@ -42,7 +42,7 @@ A structured activation workflow replacing fragmented, repetitive execution with
 
 [![AI-Assisted Activation Workflow](assets/activation-workflow.jpg)](case-studies/activation-workflow.md)
 
-### 03 · [SpokenNext](case-studies/spokennext.md)
+### 03 · [SpokenNext — Voice-to-Action AI](case-studies/spokennext.md)
 
 A deployed voice-to-action prototype that converts an unstructured thought into reviewable tasks and calendar-ready actions.
 
@@ -116,4 +116,3 @@ Beyond building systems, I design practical learning and adoption experiences th
 
 **Savneet Singh Grewal**  
 [LinkedIn](https://www.linkedin.com/in/savneet-singh-grewal/) · [Stand Relevant](https://standrelevant.com) · [aisavvy90@gmail.com](mailto:aisavvy90@gmail.com)
-
