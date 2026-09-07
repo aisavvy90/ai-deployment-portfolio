@@ -32,7 +32,7 @@ The workflow combines:
 
 ## Public outcome
 
-**Zero reported incidents across the controlled scope after deployment.**
+**Zero reported overspend incidents across the controlled scope after deployment.**
 
 The result is presented at a deliberately aggregated level. Client names, internal system identifiers, commercial scope and production configuration are excluded.
 
@@ -47,4 +47,3 @@ I led problem diagnosis, business-rule design, workflow architecture, AI-assiste
 ## What this demonstrates
 
 `Enterprise risk` · `AI-assisted building` · `API integration` · `governed automation` · `human oversight` · `production deployment` · `change management`
-
