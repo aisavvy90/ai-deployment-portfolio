@@ -1,8 +1,8 @@
-# Enterprise AI Deployment Portfolio
+# Enterprise AI Operator Portfolio
 
 ### Savneet Singh Grewal
 
-**Media operator · AI-assisted product builder · Deployment and adoption leader**
+**Enterprise AI Operator · AI-Assisted Product Builder · Deployment & Adoption Leader**
 
 [LinkedIn](https://www.linkedin.com/in/savneet-singh-grewal/) · [Stand Relevant](https://standrelevant.com) · [Email](mailto:aisavvy90@gmail.com)
 
@@ -30,7 +30,7 @@ Alongside leading a **₹1,000 crore annual media business**, an **85-person org
 
 A governed preventive-control workflow that detects emerging operational risk, applies explicit rules, escalates exceptions and preserves an audit trail.
 
-**Public outcome:** zero reported incidents across the controlled scope after deployment.
+**Public outcome:** zero reported overspend incidents across the controlled scope after deployment.
 
 [![AI-Assisted Risk Control System](assets/risk-control-system.jpg)](case-studies/risk-control-system.md)
 
