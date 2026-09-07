@@ -1,312 +1,118 @@
-# AI Deployment Portfolio
+# Enterprise AI Deployment Portfolio
 
 ### Savneet Singh Grewal
-**Enterprise operator · AI solution builder · Deployment & adoption leader**
 
-[LinkedIn](https://www.linkedin.com/in/savneet-singh-grewal/) · [Stand Relevant](https://standrelevant.com)
+**Media operator · AI-assisted product builder · Deployment and adoption leader**
+
+[LinkedIn](https://www.linkedin.com/in/savneet-singh-grewal/) · [Stand Relevant](https://standrelevant.com) · [Email](mailto:aisavvy90@gmail.com)
 
 ---
 
-## What this portfolio is about
+## I turn operating problems into deployed AI workflows
 
-I work at the intersection of **business transformation, AI solution design, deployment, adoption and measurable operating outcomes**.
+I lead at the intersection of **media operations, enterprise AI, solution design and adoption**. My work starts with a measurable business constraint—not a technology demo—and continues through design, AI-assisted building, testing, governance, deployment and user enablement.
 
-In my current role, I lead a **₹1,000 Cr annual biddable media business and an 85-person organization**, while also building AI-enabled operating systems that solve real execution and governance problems.
+Alongside leading a **₹1,000 crore annual media business**, an **85-person organisation** and work spanning **100+ brands**, I build practical systems that improve control, execution and decision-making.
 
-My focus is not AI demos. It is the harder question:
-
-> **How do you turn AI and automation into a reliable system that people actually use in live operations?**
-
-This repository documents three examples.
-
-| Deployment | Problem solved | Outcome |
+| Operating scale | AI delivery | Adoption |
 |---|---|---|
-| **OAMS** | Prevent media overspends at enterprise scale | ₹314 Cr governed; zero reported overspends after deployment |
-| **KOLO** | Scale creator/KOL execution without delays or manual errors | 75% lower execution effort; helped secure ₹36 Cr annual managed media mandate |
-| **AI Brain Dump** | Convert unstructured voice into safe, structured actions | Deployed LLM prototype with ambiguity controls and Calendar integration |
+| ₹1,000 crore annual media business | From business rules to production workflows | Enabled hundreds of practitioners |
+| 85-person organisation | Human-in-the-loop controls | Training, rollout and iteration |
+| 100+ brands | Cloud deployment and API integration | Business outcomes over demo theatre |
+
+> **My focus: making AI useful, governable and adopted in real operations.**
 
 ---
 
-# 01 · OAMS — Overspend Alert Management System
+## Selected work
 
-## Business problem
+### 01 · [AI-Assisted Risk Control System](case-studies/risk-control-system.md)
 
-At large media scale, manual checks can identify overspend only after the damage has occurred.
+A governed preventive-control workflow that detects emerging operational risk, applies explicit rules, escalates exceptions and preserves an audit trail.
 
-The objective was to create a **preventive control system** that could continuously monitor live campaign conditions, identify risk early, intervene safely and leave an auditable trail.
+**Public outcome:** zero reported incidents across the controlled scope after deployment.
 
-## Architecture
+[![AI-Assisted Risk Control System](assets/risk-control-system.jpg)](case-studies/risk-control-system.md)
+
+### 02 · [AI-Assisted Activation Workflow](case-studies/activation-workflow.md)
+
+A structured activation workflow replacing fragmented, repetitive execution with validation, approval controls, execution visibility and operational monitoring.
+
+**Public outcome:** 75% lower execution effort, with zero reported execution errors or delays during the monitored rollout.
+
+[![AI-Assisted Activation Workflow](assets/activation-workflow.jpg)](case-studies/activation-workflow.md)
+
+### 03 · [SpokenNext — Voice-to-Action AI](case-studies/spokennext.md)
+
+A deployed voice-to-action prototype that converts an unstructured thought into reviewable tasks and calendar-ready actions.
+
+**Design principle:** use AI to interpret; use deterministic logic and human confirmation to execute.
+
+[Try the live prototype](https://ai-brain-dump-794462594625.asia-south1.run.app/?final-android=1)
+
+---
+
+## How I move from problem to production
 
 ```mermaid
 flowchart LR
-    A[Planned budgets & dates] --> B[Scheduled monitoring]
-    B --> C{Risk threshold breached?}
-    C -- No --> B
-    C -- Yes --> D[Pause via platform API]
-    D --> E[Notify stakeholders]
-    E --> F[Write audit log]
-    F --> B
+    A[Discover] --> B[Design]
+    B --> C[Build]
+    C --> D[Test]
+    D --> E[Deploy]
+    E --> F[Adopt]
+    F --> G[Measure]
 ```
 
-## Deployment scale
+1. **Discover** the costly constraint in the operating model.
+2. **Design** the business rules, controls, workflow and success measures.
+3. **Build** through AI-assisted development and platform integrations.
+4. **Test** normal paths, edge cases, ambiguity and failure modes.
+5. **Deploy** with permissions, logging, rollback and human oversight.
+6. **Adopt** through training, rollout support and feedback loops.
+7. **Measure** business outcomes, not feature output.
 
-- **₹314 Cr** of media spend governed
-- **54 clients**
-- **159 ad accounts**
-- ~**2,000 campaigns**
-- ~**4,500 ad sets**
-- **Zero reported overspends after deployment**
-
-## Key technical / product decision
-
-The most important decision was **where not to use an LLM**.
-
-Because OAMS could pause live media spend, the control layer remained deterministic:
-
-- explicit thresholds
-- predefined business rules
-- auditable actions
-- structured exception handling
-- human oversight
-
-AI accelerated development, diagnostics and workflow design, but **high-consequence financial actions remained governed by deterministic controls**.
-
-### What this demonstrates
-
-`Enterprise risk` · `API integration` · `automation` · `controls` · `human-in-the-loop design` · `production deployment` · `change management`
+Read the full framework: [From Business Problem to Production AI](frameworks/from-problem-to-production-ai.md).
 
 ---
 
-# 02 · KOLO — KOL Orchestrator
+## Where AI fits—and where it does not
 
-## Business problem
+I use probabilistic models for interpretation, classification, structuring and candidate actions. High-consequence execution remains bounded by deterministic controls, explicit permissions, validation and human review.
 
-Creator/KOL activations involved repetitive manual execution across platforms, spreadsheets, approvals and quality checks.
+That separation matters in enterprise environments: the system must be useful when the model is uncertain, an API fails or the user changes their mind.
 
-At enterprise volume, that created three problems:
-
-1. **Execution delays**
-2. **Manual errors**
-3. **Limited scalability**
-
-I identified the opportunity to turn that operating constraint into a **technology-led commercial differentiator**.
-
-## Architecture
-
-```mermaid
-flowchart LR
-    A[Creator / campaign plan] --> B[Validate inputs]
-    B --> C[Approval controls]
-    C --> D[Platform activation]
-    D --> E[Execution write-back]
-    E --> F[QA & audit trail]
-    F --> G[Operational reporting]
-```
-
-## Results
-
-- Execution effort reduced from **~800 to ~200 man-hours/month**
-- **75% reduction** in execution effort
-- **Zero execution errors** in live operations
-- **Zero delays** in live operations
-
-## Commercial impact
-
-KOLO became a key differentiator during a competitive digital media review for **Reckitt Benckiser (RB)**, where the mandate was expected to move to another agency.
-
-Rather than presenting only a conventional media strategy, I translated the execution problem into a business case around **speed, scalability, governance and risk reduction**.
-
-The solution helped influence the client's decision to award us a **₹36 Cr (~US$4M) annual managed media mandate**.
-
-## My role across the lifecycle
-
-```mermaid
-flowchart LR
-    A[Problem discovery] --> B[Solution design]
-    B --> C[End-to-end testing]
-    C --> D[Commercial proposition]
-    D --> E[Client decision]
-    E --> F[Deployment]
-    F --> G[Team adoption]
-    G --> H[Full-scale operations]
-```
-
-I remained involved after the win: testing the product end to end, supporting rollout, hand-holding the operating team during scaled execution, resolving issues and staying engaged until adoption stabilized.
-
-### What this demonstrates
-
-`Presales` · `solution design` · `commercial value creation` · `workflow automation` · `deployment` · `postsales adoption` · `operating scale`
+Read more: [Responsible Deployment and Adoption](frameworks/responsible-deployment-and-adoption.md).
 
 ---
 
-# 03 · AI Brain Dump — Voice → Structured Action
+## AI and technical fluency
 
-## Business problem
+**AI:** LLM workflows · structured outputs · prompt design · human-in-the-loop AI · agentic workflow concepts · evaluation and failure-mode thinking
 
-People often capture work as unstructured voice notes:
+**Build and deployment:** Python · Next.js · APIs · Google Apps Script · OAuth · Google Calendar API · GitHub · Google Cloud Run · testing and debugging
 
-> “Call Dad tomorrow at 5, order diapers tonight, pay the electricity bill by Friday, and sometime next week get the plumber.”
-
-The difficult problem is not transcription. It is converting probabilistic natural-language interpretation into **safe deterministic actions**.
-
-## Architecture
-
-```mermaid
-flowchart LR
-    A[Voice note] --> B[Speech transcription]
-    B --> C[LLM organiser]
-    C --> D[Structured output]
-    D --> E[Deterministic validation]
-    E --> F{Ambiguous?}
-    F -- Yes --> G[Ask user to clarify]
-    F -- No --> H[Calendar-ready action]
-    G --> E
-```
-
-## What I built
-
-A deployed prototype that turns an unstructured voice note into structured tasks, reminders and calendar-ready actions.
-
-Core capabilities include:
-
-- speech-to-text transcription
-- LLM-based task extraction and structuring
-- relative-date interpretation
-- Roman-Hinglish / multilingual normalization
-- Google OAuth
-- Google Calendar integration
-- duplicate protection
-- retries and state management
-- ambiguity detection
-- human clarification before unsafe execution
-
-## Key architecture principle
-
-> **Use the LLM for interpretation. Use deterministic application logic for execution.**
-
-Examples:
-
-- `tomorrow at 5 PM` → resolve deterministically
-- `Friday tak` → map using explicit date rules
-- `sometime next week` → do **not** silently create an event; ask the user to clarify
-
-When confidence is insufficient, the system routes the decision back to the user.
-
-## Technical stack
-
-`LLMs` · `speech transcription` · `structured outputs` · `Next.js` · `APIs` · `Google OAuth` · `Google Calendar API` · `Google Cloud Run` · `GitHub` · `testing & debugging`
-
-### What this demonstrates
-
-`LLM orchestration` · `structured outputs` · `API integration` · `cloud deployment` · `failure handling` · `human-in-the-loop AI`
+**Enterprise delivery:** use-case discovery · business-case design · solution shaping · operating governance · deployment planning · adoption · executive stakeholder engagement
 
 ---
 
-# How I approach enterprise AI deployment
+## My role in the build
 
-## 1. Start with the business constraint
+I am not positioning myself as a traditional software engineer. I am an operator and AI-assisted product builder who owns the journey from business problem to working system: requirements, business logic, workflow architecture, AI-assisted development, testing, deployment, enablement and iteration.
 
-Do not begin with:
-
-> “Where can we use AI?”
-
-Begin with:
-
-> **“Where are we losing time, money, control or scalability?”**
+The production repositories behind enterprise work remain private. This portfolio deliberately excludes client identities, proprietary code, internal configurations and commercially sensitive operating data. See [Disclosure and Confidentiality](DISCLOSURE.md).
 
 ---
 
-## 2. Separate probabilistic intelligence from deterministic control
+## AI enablement
 
-LLMs are strong at interpretation, summarisation, classification, reasoning over unstructured inputs and generating candidate actions.
+Beyond building systems, I design practical learning and adoption experiences that help teams move from AI curiosity to confident application. These programmes have enabled **hundreds of practitioners** through live demonstrations, applied use cases and operating guidance.
 
-They should not automatically own every high-risk decision.
-
-For financial, operational or customer-impacting actions, I prefer:
-
-- explicit business rules
-- validation layers
-- thresholds
-- audit trails
-- human escalation
-
----
-
-## 3. Design for deployment, not just the demo
-
-A useful prototype answers:
-
-> “Can this work?”
-
-A deployable enterprise system also has to answer:
-
-- What happens when an API fails?
-- What happens when the model is uncertain?
-- How do we prevent duplicate actions?
-- Who can override the system?
-- What gets logged?
-- How does it fit existing workflows?
-- How do users trust it?
-- How do we measure business value?
-
----
-
-## 4. Treat adoption as part of the architecture
-
-A technically correct system that users avoid is not a successful deployment.
-
-My deployment lifecycle therefore includes:
-
-**testing → rollout → user training → operating support → feedback → iteration → scaled adoption**
-
----
-
-# AI & technical fluency
-
-### AI
-
-LLM workflows · prompt engineering · structured outputs · agentic workflow concepts · human-in-the-loop AI · AI-assisted prototyping · evaluation and failure-mode thinking
-
-### Engineering / deployment
-
-APIs · Google Apps Script · Python · Next.js · GitHub · Google Cloud · Cloud Run · OAuth · testing & debugging
-
-### Enterprise deployment
-
-Problem diagnosis · use-case design · ROI / business-case development · presales solution shaping · deployment planning · change management · executive stakeholder engagement · operating governance
-
----
-
-# Why the production repositories are private
-
-The systems described here were built around real enterprise workflows and may contain client-specific operating logic, platform configurations, internal data structures, environment configuration and commercially sensitive implementation details.
-
-For that reason, the production repositories remain **private by design**.
-
-This public portfolio documents the **business problem, architecture, deployment approach, technical trade-offs and measurable outcomes** without exposing confidential source code or client data.
-
-I am happy to discuss architecture, design decisions, testing methodology, failure modes and implementation details in a technical interview.
-
----
-
-# Current focus
-
-I am most interested in roles where I can bridge:
-
-**C-suite business problem**  
-↓  
-**AI strategy & solution architecture**  
-↓  
-**hands-on prototyping**  
-↓  
-**enterprise deployment**  
-↓  
-**adoption & measurable outcomes**
+[Read the enablement case study](case-studies/ai-enablement.md)
 
 ---
 
 ## Contact
 
-**Savneet Singh Grewal**
-
-[LinkedIn](https://www.linkedin.com/in/savneet-singh-grewal/) · [Stand Relevant](https://standrelevant.com) · GitHub: [`aisavvy90`](https://github.com/aisavvy90)
+**Savneet Singh Grewal**  
+[LinkedIn](https://www.linkedin.com/in/savneet-singh-grewal/) · [Stand Relevant](https://standrelevant.com) · [aisavvy90@gmail.com](mailto:aisavvy90@gmail.com)
